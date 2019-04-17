@@ -577,6 +577,7 @@ section h3.section-subheading {
   text-transform: none;
 }
 .contact-member p {
+  text-align: left;
   margin-top: 0;
 }
 .contact-member-rounded {
