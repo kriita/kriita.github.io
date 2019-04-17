@@ -14,6 +14,9 @@ body {
 .text-primary {
   color: #297DAA;
 }
+.isolated {
+  margin: -1rem -1rem -1rem auto;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -57,12 +60,14 @@ h6 {
   background-color: #E1F2FB;
 }
 .btn-primary {
+  margin: 10px 20px;
   color: white;
   background-color: #297DAA;
   border-color: #297DAA;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 7px 15px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -168,7 +173,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle {
   background-color: #297DAA;
   border-color: #297DAA;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
@@ -279,6 +284,14 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+.intro-text .btn {
+  display: none;
+}
+@media (max-width: 767px) {
+  .intro-text .btn {
+    display: none;
+  }
+}
 section {
   padding: 100px 0;
 }
@@ -303,6 +316,9 @@ section h3.section-subheading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+//#experience {
+  display: none;
 }
 #portfolio .portfolio-item {
   border: 1px solid black;
@@ -366,9 +382,16 @@ section h3.section-subheading {
 #portfolio * {
   z-index: 2;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  #portfolio .portfolio-item {
+    display: block;
+    margin: 30px;
+    border-radius: 15px;
   }
 }
 .timeline {
@@ -538,21 +561,32 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
+
 .contact-member {
+  padding: 25px;
   text-align: center;
   margin-bottom: 10px;
 }
 .contact-member img {
   margin: 0 auto;
-  border: 7px solid white;
+  border: 7px solid #E1F2FB;
 }
 .contact-member h4 {
   margin-top: 25px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   text-transform: none;
 }
 .contact-member p {
   margin-top: 0;
+}
+.contact-member-rounded {
+  background-color: #E1F2FB;
+  border-radius: 25px;
+}
+@media (max-width: 768px) {
+  .contact-member .img-circle {
+    max-width: 50%;
+  }
 }
 aside.clients img {
   margin: 50px auto;
@@ -751,6 +785,41 @@ body {
   height: 12rem;
 }
 
+.experience .experience-toggle {
+  background-color: #297DAA;
+  border-color: #297DAA;
+  font-family: "Monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+}
+.experience .experience-toggle:hover,
+.experience .experience-toggle:focus {
+  background-color: #297DAA;
+}
+.experience .experience-modal {
+  margin: 1.75rem auto;
+}
+.experience .experience-modal {
+    position: relative;
+    width: auto;
+    margin: .5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    pointer-events: none;
+}
+@media (min-width: 576px) {
+  .experience .experience-modal {
+      max-width: 500px;
+      margin: 1.75rem auto;
+      margin-top: 1.75rem;
+      margin-right: auto;
+      margin-bottom: 1.75rem;
+      margin-left: auto;
+  }
+}
 .education-img {
   height: 10rem;
 }
