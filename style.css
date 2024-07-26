@@ -1,0 +1,71 @@
+/* Pastel Minimal Design System */
+
+:root {
+  --peach: #f9a825; --lavender: #ba68c8; --mint: #4db6ac;
+  --bg: #faf9fc; --card-bg: #f7f5fa; --text: #2c2c3a; --muted: #71718a;
+  --peach-lt: #fef3e2; --lav-lt: #f4e9fb; --mint-lt: #e0f5f1;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  color: var(--text); background: var(--bg); line-height: 1.7;
+}
+a { color: inherit; text-decoration: none; }
+
+.wrap          { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+.gap           { margin-top: 3.5rem; }
+.section-ttl   { font-size: 1.36rem; font-weight: 600; margin-bottom: .8em; }
+
+/* ── Navigation ── */
+.nav       { display: flex; justify-content: space-between; align-items: center;
+             max-width: 920px; margin: 0 auto; padding: 1.4rem 2rem; }
+.nav__logo { font-size: 1.25rem; font-weight: 700; color: var(--lavender); }
+.nav__links { display: flex; gap: 1.8rem; font-size: .92rem; }
+.nav a       { color: var(--muted); transition: color .2s ease; }
+.nav a:hover, .nav a[aria-current] { color: var(--lavender); }
+
+/* ── Hero ── */
+.hero         { padding-top: 4.5rem; text-align: center; margin-bottom: 2rem; }
+h1            { font-size: clamp(2.4rem, 6vw, 3.4rem); font-weight: 800; line-height: 1.15; margin-bottom: .9em; }
+h1 span       { position: relative; z-index: 1; border-radius: 0 0 12px 12px; }
+h1 span::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: .35em;
+                  background: linear-gradient(90deg, #ffcdd2 -7%, var(--lav-lt) 40%, transparent 76%); z-index: -1; }
+.hero__sub    { font-size: clamp(1.05rem, 2.5vw, 1.25rem); color: var(--muted); }
+
+/* ── About Card ── */
+.about-card   { background: var(--card-bg); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden; transition: box-shadow .3s ease; }
+.about-card::before { content: ''; height: 6px; background: linear-gradient(90deg, var(--peach), var(--lavender), var(--mint)); border-radius: 24px 24px 0 0; position: absolute; top: 0; left: 0; right: 0; }
+.about-card:hover { box-shadow: 0 8px 32px rgba(186, 104, 200, .15); }
+.about-card p { margin-bottom: .75em; }
+
+/* ── Skills ── */
+.skills       { list-style: none; padding-top: .5em; }
+.skill-item   { display: flex; align-items: center; gap: .75em; padding: .65em 0; color: var(--muted); font-size: 1rem; }
+.skill-emj    { font-size: 1.3em; }
+
+/* ── Runner Teaser Box ── */
+.runner-box   { background: linear-gradient(135deg, var(--mint-lt) 0%, var(--lav-lt) 100%); border-radius: 24px; padding: 3rem 2.5rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.6em; }
+
+/* ── Contact Box ── */
+.contact-box  { font-size: .95rem; color: var(--muted); display: flex; gap: 2em; justify-content: center; align-items: center; }
+.contact-link a  { margin-bottom: 1em; transition: opacity .2s ease; }
+.contact-link a:hover { opacity: .7; }
+
+/* ── Footer ── */
+.footer       { text-align: center; padding-top: 3rem; font-size: .85rem; color: var(--muted); max-width: 960px; margin: 0 auto; }
+
+/* ═══════ Playlist Cards (playlists.html) ═══════ */
+.pl-grid     { display: grid; gap: 1.2em; margin-top: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.pl-card     { border-radius: 20px; padding: 2.2rem 1.8rem; transition: transform .2s ease, box-shadow .2s ease; display: flex; flex-direction: column; gap: .9em; color: #fff; position: relative; overflow: hidden; }
+.pl-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(0,0,0,.15); }
+
+.pl-card--peach      { background: linear-gradient(135deg, #ffb74d, #ffa726); }
+.pl-card--lavender   { background: linear-gradient(135deg, #ce93d8, #ab47bc); }
+.pl-card--mint       { background: linear-gradient(135deg, #80cbc4, #26a69a); }
+.pl-card--purple     { background: linear-gradient(135deg, #b39ddb, #7e57c2); }
+
+.pl-badge   { display: inline-block; font-size: .76rem; font-weight: 600; padding: .28em .8em; border-radius: 99px; background: rgba(255,255,255,.22); color: #fff; letter-spacing: .4px; }
+
+.pl-header         { text-align: center; margin-bottom: 1rem; }
+.pl-header h1      { font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 800; line-height: 1.2; margin-bottom: .6em; }

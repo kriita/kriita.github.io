@@ -1,229 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>FJ Consulting</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Theme CSS -->
-    <link href="css/agency.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filip Jaredson — Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
+<body>
 
-<body id="page-top" class="index">
+  <!-- ═══ Nav ═══ -->
+  <nav class="nav">
+    <a href="/" class="nav__logo">fj</a>
+    <div class="nav__links">
+      <a href="#about">About</a>
+      <a href="/playlists.html">Playlists</a>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">FJ Consulting</a>
-            </div>
+  <main class="wrap">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#experience">FJ Consulting</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#contact">About me</a>
-                    </li>
-                    <!-- portfolio unused -->
-                    <li>
-                        <a class="page-scroll" href="#education">Education</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">FJ Consulting</div>
-                <div class="intro-lead-in">IT consulting with an engineering student's mindset</div>
-                <a href="#experience" class="page-scroll btn btn-xl">Past work</a>
-            </div>
-        </div>
-    </header>
-
-<!-- Services Section -->
-    <section id="experience" class="bg-darkest-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What is FJ Consulting?</h2>
-                    <h3 class="section-subheading text-muted">FJ Consulting is a small company that consults with home IT in various ways, mainly with home networks and systems.</h3>
-                </div>
-            </div>
-            
-            <button type="button" class="experience-toggle btn btn-xl center-block" data-toggle="modal" data-target="#experience-modal">Past experience</button>
-
-            <div id="experience-modal" class="modal fade" tabindex="-1" role="dialog" tabindex="-1">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <!-- Header -->
-                        <div class="modal-header text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-                            <h2 class="modal-title">Past experience</h2>
-                        </div>
-
-                        <!-- Body -->
-                        <div class="modal-body">
-                            <div class="col-md-4">
-                                <img src="https://www.student.liu.se/kalasjakten/snabbfakta/1.644242/LiU_primar_svart.png" class="img-responsive center-block experience-img" alt="">
-                                <h4 class="service-heading">January 2018 - June 2018</h4>
-                                <p class="text-muted">Lab assistant in basic programming for engineering students, helping them achieve their course goals and grading their assignments and exams.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="https://toyota-forklifts.eu/Content/img/logo.png" class="img-responsive center-block experience-img toyota" alt="">
-                                <h4 class="service-heading">June 2017 - August 2017</h4>
-                                <p class="text-muted">Paint shop operator at the frame painting department, preparing forklift frames for painting and afterwards delivering them to inventories and places in the production chain. A very meaningful experience learning about supply chains.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="https://www.ruag.com/sites/default/files/logos/logo.svg" class="img-responsive center-block experience-img" alt="">
-                                <h4 class="service-heading">June 2015 - August 2015</h4>
-                                <p class="text-muted">An inspirational summer job in high school as a janitor at RUAG Space's facilities in Linköping, where I was inspired to pursue a career in engineering.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Button -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <h1>Filip Jaredson</h1>
+      <p class="hero__sub">A nerd with a background in Applied Physics &amp; Electrical Engineering</p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading">About me</h2>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 3rem;">
-
-              <div class="col-sm-4 col-sm-offset-1" style="margin-top: 3rem;">
-                  <div class="contact-member">
-                      <img src="img/filip.jpg" class="img-responsive img-circle" alt="">
-                  </div>
-              </div>
-
-              <!-- About me -->
-              <div class="col-sm-6" style="margin-top: 0;">
-                <div class="contact-member contact-member-rounded">
-                  <h4>Filip Jaredson</h4>
-                  <p>
-                      I am a third year engineering student at Linköping University, studying my B.Sc. in Applied Physics and Electronics and heading into Signal and Image Processing for my Master's degree.  I have broad interests in technology, with a passion for programming and machine learning.
-                  </p>
-                  <p>
-                      Outside of my studies, I am part of the committee for the Student Orchestra Festival 2019, on the board as Treasurer for the student orchestra LiTHe Blås, and work at the pub Villevalla. Previously, I've also taught courses for my University's Department for Computer Science (IDA), been project manager for P-LAN, and was auditor for LiTHe Blås.
-                  </p>
-                  <h4 class="text-muted">Linkedin: </h4><a href="https://www.linkedin.com/in/filip-jaredson-22371657/" target="_blank" class=".portfolio-link">https://www.linkedin.com/in/filip-jaredson-22371657/</a>
-                  <h4>Contact me</h4>
-                      <p style="text-align: center"><a href="mailto:thordask@gmail.com">thordask@gmail.com</a></p>
-                      <p style="text-align: center"><a href="tel:+46 73-595 36 24">+46 (0)73 - 595 36 24</a></p>
-                </div>
-              </div>
-            </div>
-        </div>
+    <!-- ═══ About ═══ -->
+    <section id="about" class="gap">
+      <h2 class="section-ttl">About Me</h2>
+      <div class="about-card">
+        <p>I sit at the intersection of hardware and software — with a keen interest in <span class="highlight">Health</span>, <span class="highlight">Self-Hosting</span>, and <span class="highlight">Machine Learning</span>.</p>
+        <p>Current areas of focus:</p>
+        <ul class="skills-list">
+          <li class="skill-item"><span class="skill-emj">🧠 </span> Machine Learning</li>
+          <li class="skill-emj">⚙️ </span> Software Development Methodology</li>
+          <li class="skill-emj">🌐</span> Web Development</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
-    <section id="education" class="bg-darkest-gray">
-        <div class="§iner">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Education</h2>
-                    <h3 class="section-subheading text-muted">I can send grades and descriptions upon request.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 portfolio-item bg-lightest-gray">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <img src="http://www.liu.se/mall11/images/logo-sv.png" class="img-responsive center-block education-img liu-img" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>University of Linköping</h4>
-                        <p class="text-muted">I am currently studying my second year of Applied Physics and Electronics in Linköping, Sweden. Outside of school, I play the trombone and am an accountant for the student orchestra LiTHe Blås.</p>
-                    <p class="text-muted">Website: <a href="https://liu.se/en">https://liu.se/en</a></p>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item bg-lightest-gray">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Katlogonew.jpg" class="img-responsive center-block education-img" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Katedralskolan, Linköping</h4>
-                        <p class="text-muted">I studied one year of the International Baccalaureate program, but then switched and finished the Natural Sciences program. I studied extra maths at the Univeristy of Linköping during my final year and was very involved with different musical groups and took lessons with several instruments at Kulturskolan.</p>
-                        <p class="text-muted">Wikipedia page: <a href="https://en.wikipedia.org/wiki/Katedralskolan,_Link%C3%B6ping">link</a></p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item bg-lightest-gray">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <img src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/401/logo/Logo.png" class="img-responsive center-block education-img ash-img" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>American School of the Hague</h4>
-                        <p class="text-muted">I spent most of my grade school years at this international American school when I grew up in The Netherlands. I studied the honors maths there, and was involved in the student ambassadors program, volleyball team, and RPG club.</p>
-                        <p class="text-muted">Website: <a href="https://www.ash.nl/page">https://www.ash.nl/page</a></p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <img src="https://production.cdmycdn.com/webpack/44e01805165bfde4e6e4322c540abf81.svg" class="img-responsive center-block education-img" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Web Dev Studies</h4>
-                        <p class="text-muted">This is where I learned most of my web dev skills, taking the CodeCademy Ready (now called Pro Intensive) 10-week course in Web Development. Course content included writing html and css code as well as basic use of bootstrap, jQuery and slick.</p>
-                        <p class="text-muted">Website: <a href="https://www.codecademy.com/">https://www.codecademy.com/</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ═══ Runner Teaser ═══ -->
+    <section id="runners" class="gap">
+      <h2 class="section-ttl">Running &amp; Rhythm</h2>
+      <div class="runner-box">
+
+🎧 I track my cadence during runs with custom Spotify playlists organized by BPM. Find yours:
+        <a href="/playlists.html" class="btn">View Playlists →</a>
+      </div>
     </section>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ═══ Contact ═══ -->
+    <section id="contact" class="gap">
+      <h2 class="section-ttl">Get in touch</h2>
+      <div class="contact-box">
+        <a href="https://github.com/kriita" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 1 0 12 12 12 12 0 0 0-13.0A12 12 0 0 0 0 12zm6.74 18.15C16.95 20.3 14.57 21 12 21s-4.95-.7-6.74-2.85C3.4 16.16 3.4 10.03 5.26 7.85c1.79-2.15 4.17-2.85 6.74-2.85s4.95.7 6.74 2.85c1.86 2.15 1.86 8.28 0 10.3ZM12 5.5c-.84 0-1.5.66-1.5 1.5s.66 1.5 1.5 1.5 1.5-.66 1.5-1.5-.66-1.5-1.5-1.5Zm4.27 3.88a1.5 1.5 0 1 0 0 3 .15.15 0 0 0-.07-2.88c-.13 0-.26.04-.37.1l-.15.1-1.23 1.23c-.11.11-.17.26-.17.42v2.4c0 .16-.06.32-.18.43l-1.23 1.23c-.1.1-.19.21-.26.33a1.5 0 0 0 2.61.43l1.27-1.27a1.5 1.5 0 0 0 .43-1.06v-.68l1.47-1.47c.1-.1.19-.22.25-.35a1.5 1.5 0 0 0-.43-2.56Z"/></svg>
+          <span>kriita</span>
+        </a>
+        <a href="https://www.linkedin.com/in/filip-jaredson/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg width="18" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0a19 19 0 1 0 19 19 19 19 0 0 0-5.36-13.64A19 19 0 0 0 19 0zM7 18H3.5V8.39H7Zm-2.81-15.2a1.94 1.94 0 0 0-1.64 1.94 1.83 1.83 0 0 0 1.82 1.88A1.88 1.88 0 0 0 8.74 8.24H5.37V8.24A5.22 5.22 0 0 1 10.65 3v5.22h-3.3V6.88c0-1.85-.77-2.88-2.39-2.88Zm14.82 14.3h-3.37v-3.4c0-1.56-1.44-2.59-2.4-1.6a2.56 2.56 0 0 0-1 .6c-.68.68-1 1.5-1 2.3v2.1h-3.37s.45-11.07 0-12.16h3.37v3.48a2.46 2.46 0 0 1 2.53-2c2.5 0 4.6 1.92 4.6 6.67Z"/></svg>
+          <span>Filip Jaredson</span>
+        </a>
+      </div>
+    </section>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <p>&copy; 2025 Filip Jaredson · Built with ♥ and GitHub Pages</p>
+  </footer>
+  </main>
 </body>
-
 </html>
